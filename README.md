@@ -1,11 +1,3 @@
-[![PyPI - License](https://img.shields.io/npm/l/express?style=flat-square)](https://github.com/PrithivirajDamodaran/Gramformer/blob/main/LICENSE)
-[![visitors](https://visitor-badge.glitch.me/badge?page_id=Gramformer.count_visitors)](https://visitor-badge.glitch.me)
-
-<p align="center">
-    <img src="./images/GLogov1.png" width="35%" height="35%"/>
-</p>
-
-
 # Gramformer
 
 Human and machine generated text often suffer from grammatical and/or typographical errors. It can be spelling, punctuation, grammatical or word choice errors. Gramformer is a library that exposes 3 seperate interfaces to a family of algorithms to **detect, highlight and correct** grammar errors. To make sure the corrections and highlights recommended are of high quality, it comes with a quality estimator. You can use Gramformer in one or more areas mentioned under the "use-cases" section below or any other usecase as you see fit. Gramformer stands on the shoulders of giants, it combines some of the top notch researches in grammar correction. *Note: It works at **sentence levels** and has been trained on 64 length sentences, so not (yet) suitable for long prose or paragraphs (stay tuned for upcoming releases)*
@@ -63,19 +55,17 @@ As of today grammatical safety nets for authoring social contents (Post or Comme
 
 - Messaging platforms and Social platforms can highlight / correct grammtical errors automatically without altering the meaning or intent.
 
-## Installation
-```python
-pip install -U git+https://github.com/PrithivirajDamodaran/Gramformer.git
-```
-## Quick Start
+###Clone the repository
+git clone https://github.com/adonlopes/gramformer-app.git
+cd gramformer-app
 
-~~```python
-[IMPORTANT]
-If you are using in notebook, use the below line to login:
-       from huggingface_hub import notebook_login
-       notebook_login()
-else use:
-       huggingface-cli login```~~
+### Project Structure
+Gramformer/
+├── gramformer/           # Gramformer model code
+├── streamlit_app.py      # Main Streamlit frontend
+├── requirements.txt      # Python dependencies
+├── README.md             # Project documentation
+└── assets/               # (optional) CSS / UI assets
 
 ### Correcter - Available now
 ```python
@@ -304,6 +294,17 @@ TBD (I will benchmark grammformer models against the following publicy available
 - [Grammatical Error Detection and Correction Using Tagger Disagreement](https://www.aclweb.org/anthology/W14-1706.pdf)
 - [Automatic Annotation and Evaluation of Error Types for Grammatical Error Correction](https://aclanthology.org/P17-1074.pdf)
     
+### Requirements
+
+Example requirements.txt:
+streamlit
+torch
+transformers
+spacy
+errant
+beautifulsoup4
+pandas
+st-annotated-text
 
 ## How to cite Gramformer
 TBD
