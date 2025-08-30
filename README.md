@@ -56,8 +56,8 @@ As of today grammatical safety nets for authoring social contents (Post or Comme
 - Messaging platforms and Social platforms can highlight / correct grammtical errors automatically without altering the meaning or intent.
 
 ###Clone the repository
-git clone https://github.com/adonlopes/gramformer-app.git
-cd gramformer-app
+git clone https://github.com/adonlopes/Grammer_Correction-using-NLP
+
 
 ### Project Structure
 Gramformer/
